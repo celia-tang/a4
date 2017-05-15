@@ -44,18 +44,18 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th><a href="/upname" role="button" class="btn-block btn-info">Name</button></th>
-                    <th><a href="/uppriority" role="button" class="btn-block btn-info">Priority</button></th>
-                    <th><a href="/updue" role="button" class="btn-block btn-info">Due By</button></th>
+                    <th><a href="/upname" role="button" class="btn-block btn-info">Name</a></th>
+                    <th><a href="/uppriority" role="button" class="btn-block btn-info">Priority</a></th>
+                    <th><a href="/updue" role="button" class="btn-block btn-info">Due By</a></th>
                     @if($complete == 0)
-                        <th><a href="/incomplete" role="button"  class="btn-block btn-info">Complete</button></th>
+                        <th><a href="/incomplete" role="button"  class="btn-block btn-info">Complete</a></th>
                     @elseif($complete == 1)
-                        <th><a href="/completed" role="button" class="btn-block btn-danger">Complete</button></th>
+                        <th><a href="/completed" role="button" class="btn-block btn-danger">Complete</a></th>
                     @else
-                        <th><a href="/" role="button" class="btn-block btn-warning">Complete</button></th>
+                        <th><a href="/" role="button" class="btn-block btn-warning">Complete</a></th>
                     @endif
-                    <th><a href="/updue" role="button" class="btn-block btn-info">Tag</button></th>
-                    <th><a href="" class="btn-block btn-info">Delete</button></th>
+                    <th><a href="/updue" role="button" class="btn-block btn-info">Tag</a></th>
+                    <th><a href="" class="btn-block btn-info">Delete</a></th>
                 </tr>
             </thead>
             <tbody>
@@ -64,15 +64,15 @@
                             <td>{{ $entry['name'] }}</td>
                             <td>{{ $entry['priority'] }}</td>
                             <td>{{ $entry['due_by'] }}</td>
-                            <td><a href="/switch/{{ $entry['id'] }}" role="button" class="btn-block"> 
+                            <td><a href="/switch/{{ $entry['id'] }}" role="button" class="btn-block">
                                 @if($entry['completed'] == 0)
                                     YES
                                 @else
                                     NO
                                 @endif
-                            </button></td>
-                            <td><a href="/tag/{{ $entry['id'] }}" role="button" class="btn-block"> {{ $tags[$entry['tag_id'] - 1]->description }}</td>
-                            <td><a href="/delete/{{ $entry['id'] }}" role="button" class="btn-block">Delete</td>
+                            </a></td>
+                            <td><a href="/tag/{{ $entry['id'] }}" role="button" class="btn-block"> {{ $tags[$entry['tag_id'] - 1]->description }}</a></td>
+                            <td><a href="/delete/{{ $entry['id'] }}" role="button" class="btn-block">Delete</a></td>
                         </tr>
 
                 @endforeach
@@ -80,7 +80,7 @@
 
             </tbody>
         </table>
-        </div>
+    
 
 
     </div>
