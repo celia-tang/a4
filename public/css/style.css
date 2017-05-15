@@ -1,0 +1,23 @@
+form {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	height: 20%;
+	width: 20%;
+}
+
+#error {
+	text-align: center;
+	color: red;
+}
+
+.table {
+	margin-left: 10;
+}

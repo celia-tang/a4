@@ -1,0 +1,47 @@
+{
+  "name": "melihovv/laravel-log-viewer",
+  "description": "A Laravel log viewer",
+  "license": "MIT",
+  "keywords": [
+    "log",
+    "log-reader",
+    "log-viewer",
+    "logging",
+    "laravel",
+    "lumen"
+  ],
+  "authors": [
+    {
+      "name": "Alexander Melihov",
+      "email": "amelihovv@ya.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "illuminate/support": "~5.3.0|~5.4.0",
+    "illuminate/filesystem": "~5.3.0|~5.4.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.3.0|~3.4.0",
+    "phpunit/phpunit": "^5.7",
+    "mockery/mockery": "^0.9.7",
+    "squizlabs/php_codesniffer": "^2.7",
+    "phpmd/phpmd": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Melihovv\\LaravelLogViewer\\": "src/LaravelLogViewer"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Melihovv\\LaravelLogViewer\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit",
+    "phpmd": "phpmd src/LaravelLogViewer text ./phpmd-rules.xml",
+    "phpcs": "phpcs --standard=./phpcs-rules.xml --encoding=utf-8 src/LaravelLogViewer",
+    "phpcbf": "phpcbf --standard=./phpcs-rules.xml --encoding=utf-8 src/LaravelLogViewer"
+  }
+}
